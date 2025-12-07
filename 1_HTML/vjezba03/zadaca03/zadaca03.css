@@ -2,23 +2,27 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    display: flex;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100px;
     background-color: #f0f0f0;
 }
 
+
 .container {
     display: grid;
-    /* Definira 3 stupca: auto za P2, 1fr za glavni sadržaj, auto za P4 */
-    grid-template-columns: 150px 1fr 150px; 
-    /* Definira 3 retka: auto za P1, 1fr za srednji dio, auto za P5 */
-    grid-template-rows: 80px 1fr 80px; 
-    width: 80vw;
-    height: 60vh;
-    gap: 10px; /* Razmak između glavnih elemenata */
+    grid-template-columns: 200px 1fr 200px; 
+    grid-template-rows: 100px 1fr 100px; 
+    width: 98vw;
+    gap: 10px;
+    height: 98vh;
+    padding: 10px;
 }
+
 
 .item {
     display: flex;
@@ -26,53 +30,74 @@ body {
     align-items: center;
     color: white;
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 0%;
 }
 
-/* Pozicioniranje glavnih elemenata */
+
 #p1 {
-    grid-area: 1 / 1 / 2 / span 3; /* Redak 1, Stupac 1, proteže se kroz 3 stupca */
-    background-color: #ef476f;
+    grid-area: 1 / 1 / 2 / span 3;
+    background-color: #d65846;
+    border: solid black;
 }
+
 
 #p2 {
-    grid-area: 2 / 1 / span 1 / span 1; /* Redak 2, Stupac 1 */
-    background-color: #118ab2;
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-color: #5296d6;
+    border: solid black;
 }
+
 
 .content {
-    grid-area: 2 / 2 / span 1 / span 1; /* Redak 2, Stupac 2 */
+    grid-area: 2 / 2 / span 1 / span 1;
     display: grid;
-    /* Unutarnja mreža za S1, S2, S3 */
     grid-template-rows: 100px 1fr; 
     grid-template-columns: 1fr 1fr;
-    gap: 10px; /* Razmak između S1, S2, S3 */
+    gap: 10px;
     padding: 10px;
-    background-color: white; /* Pozadina srednjeg bijelog dijela */
+    background-color: white;
     box-sizing: border-box;
+    border: solid black;
 }
+
 
 #s1 {
-    grid-area: 1 / 1 / span 1 / span 2; /* Redak 1, proteže se kroz 2 stupca */
-    background-color: #ffc43a;
+    grid-area: 1 / 1 / span 1 / span 2;
+    background-color: #eac645;
+    border: solid black;
+    height: 40px;
+    margin-top: 250px;
 }
+
 
 #s2 {
-    grid-area: 2 / 1 / span 1 / span 1; /* Redak 2, Stupac 1 */
-    background-color: #ff9f1c;
+    grid-area: 2 / 1 / span 1 / span 1;
+    background-color: #d8833b;
+    border: solid black;
+    height: 40px;
+    margin-top: 600px;
 }
+
 
 #s3 {
-    grid-area: 2 / 2 / span 1 / span 1; /* Redak 2, Stupac 2 */
-    background-color: #06d6a0;
+    grid-area: 2 / 2 / span 1 / span 1;
+    background-color: #4b9e86;
+    border: solid black;
+    height: 40px;
+    margin-top: 250px;
+    margin-top: 600px;
 }
+
 
 #p4 {
-    grid-area: 2 / 3 / span 1 / span 1; /* Redak 2, Stupac 3 */
-    background-color: #9d4edd;
+    grid-area: 2 / 3 / span 1 / span 1;
+    background-color: #925cb1;
+    border: solid black;
 }
 
+
 #p5 {
-    grid-area: 3 / 1 / 4 / span 3; /* Redak 3, Stupac 1, proteže se kroz 3 stupca */
-    background-color: #0a9396;
+    grid-area: 3 / 1 / 4 / span 3;
+    background-color: #65c97a;
+    border: solid black;
 }
