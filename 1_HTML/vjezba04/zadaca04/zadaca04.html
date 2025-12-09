@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigurna Prijava</title>
+    <link rel="stylesheet" href="zadaca04.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    
+
+    <div class="container">
+
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        
+        <div class="card">
+            <div>
+                
+                <fieldset class="form-wrap">
+                    <legend class="legend-title">
+                        Sigurna Prijava
+                    </legend>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Korisničko ime</label>
+                            <input type="text" id="username" value="admin">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Lozinka</label>
+                            <input type="password" id="password" value="......">
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Zapamti uređaj</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Prijavi se</button>
+                    </form>
+                </fieldset>
+            </div>
+           
+        </div>
+
+        <div class="activity-section">
+            <h3>Nedavne aktivnosti prijave</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IP ADRESA</th>
+                            <th>VRIJEME</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>192.168.1.15</td>
+                            <td>12:45</td>
+                            <td class="status-success">Uspjeh</td>
+                        </tr>
+                        <tr>
+                            <td>10.0.0.52</td>
+                            <td>Jučer</td>
+                            <td class="status-error">Greška</td>
+                        </tr>
+                        <tr>
+                            <td>88.102.x.x</td>
+                            <td>01.12.</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="footer-text">Prikaz zadnja 3 pokušaja.</p>
+        </div>
+    </div>
+</body>
+</html>
