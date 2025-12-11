@@ -27,7 +27,7 @@ body {
     border-radius: 4px;
     padding: 20px 15px 30px 15px;
     background-color: #fff;
-    margin: 20px auto;
+    margin: 10px auto;
     max-width: 400px;
     position: relative;
 }
@@ -43,17 +43,15 @@ body {
     top: -10px;
 }
 
-.fa fa-lock {}
-
-
-h2 {
-    font-size: 18px;
-    color: #333;
-    margin: 0;
+.head {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
 }
 
 .form-group {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .form-group label {
@@ -76,11 +74,12 @@ h2 {
 
 .checkbox-group {
     display: flex;
-    align-items: center;
+    align-items: start;
+    unicode-bidi: isolate;
 }
 
 .checkbox-group input[type="checkbox"] {
-    margin-right: 10px;
+    margin-right: -44%;
 }
 
 .checkbox-group label {

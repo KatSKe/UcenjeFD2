@@ -1,0 +1,148 @@
+body {
+    font-family: 'Merriweather', serif;
+    background: #f0dbc9;
+    margin: 0;
+    color: #422210;
+}
+
+header {
+    text-align: center;
+    padding: 40px 10px 10px;
+}
+
+.double-line {
+    border-top: 3px double;
+    width: 80%;
+    margin: 30px auto;
+    }
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #7a0000;
+}
+
+header p {
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #666666;
+    font-weight: 600;
+}
+
+nav {
+    background: #8b0000;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    gap: 30px;
+    margin: 0 20px;
+    font-size: 26px;
+}
+
+.card {
+    background: #fff;
+    width: 80%;
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+.card h2 {
+    border-left: 5px solid #b00000;
+    padding-left: 15px;
+    color: rgb(43, 43, 43);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content-two {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    color: rgb(43, 43, 43);
+    font-size: 30px;
+}
+
+.left-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+blockquote {
+    font-style: italic;
+    background: #f8f3ef;
+    padding: 10px 15px;
+    border-left: 4px solid #7a0000;
+}
+
+.video-wrapper {
+    flex: 2;
+    min-width: 500%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #7a0000;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    background: #fffdfb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c5b3a0;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+button {
+    background: #b00000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 160px;
+}
+
+button:hover {
+    background: #8a0000;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #5a3e2a;
+    font-size: 14px;
+    margin-top: 40px;
+}
