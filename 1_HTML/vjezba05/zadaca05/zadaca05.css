@@ -87,8 +87,8 @@ blockquote {
 }
 
 .video-wrapper {
-    flex: 2;
-    min-width: 500%;
+    flex: 10;
+    min-width: 80%;
 }
 
 table {
