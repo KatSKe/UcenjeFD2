@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Domaći Kutak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">DOMAĆI KUTAK</div>
+        <nav>
+            <span>Meni</span>
+            <span>Info</span>
+            <a href="rezervacija.html">Rezervacija</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Okusi tradicije na tanjuru</h1>
+            <p class="hero-subtitle">Svježe namirnice, bakini recepti i ugodna atmosfera.</p>
+        </section>
+
+        <section class="specials-section">
+            <h2>Današnji Specijaliteti</h2>
+
+            <div class="menu-container">
+                
+                <div class="menu-item">
+                    <div class="placeholder">300 x 200</div>
+                    <h3>Lovački Gulaš</h3>
+                    <span class="price">12.00 €</span>
+                    <p>S domaćim njokima i čašom crnog vina</p>
+                </div>
+                
+                <div class="menu-item">
+                    <div class="placeholder">300 x 200</div>
+                    <h3>Piletina u umaku</h3>
+                    <span class="price">10.50 €</span>
+                    <p>Grill pileća prsa s umakom od gljiva i rižom.</p>
+                </div>
+               
+                <div class="menu-ite">
+                    <div class="placeholder">300 x 200</div>
+                    <h3>Vege Tanjur</h3>
+                    <span class="price">8.00 €</span>
+                    <p>Sezonsko povrće sa žara, humus i tostirani kruh.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="nutrition-section">
+            <h2>Nutritivne Vrijednosti</h2>
+            <p>Brinemo o vašem zdravlju. Pogledajte detalje za današnja jela.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jelo</th>
+                        <th>Kalorije (kcal)</th>
+                        <th>Proteini (g)</th>
+                        <th>Alergeni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>Lovački Gulaš</td>
+                        <td>650</td>
+                        <td>35</td>
+                        <td>Gluten, Jaja</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Piletina u umaku</td>
+                        <td>520</td>
+                        <td>40</td>
+                        <td>Laktoza</td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Vege Tanjur</td>
+                        <td>380</td>
+                        <td>15</td>
+                        <td>Sezam</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="reservation-section">
+            <h2>Rezervirajte Stol</h2>
+            <label for="ime">Vaše Ime:</label>
+            <input type="text" id="ime" value="Ivan Horvat">
+            
+            <label for="osobe">Broj osoba:</label>
+            <select id="osobe">
+                <option value="1">1 Osoba</option>
+                <option value="2" selected>2 Osobe</option>
+            </select>
+
+            <label for="napomena">Napomena:</label>
+            <textarea id="napomena">Npr. rođendanska proslava...</textarea>
+
+            <input type="submit" class="submit-btn" value="Potvrdi Rezervaciju">
+        </section>
+    </main>
+</body>
+</html>
