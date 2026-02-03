@@ -5,7 +5,7 @@ body{
 .container{
     max-width: 960px;
     margin: auto;
-    /* ctrl+k+c background-color: aqua; */
+    /* background-color: aqua; */
     display: grid;
     grid-template-areas: "a b c d";
     column-gap: 1rem;

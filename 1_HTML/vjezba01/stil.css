@@ -1,10 +1,10 @@
-body {
+body{
     background-color: antiquewhite;
 }
 
 h1{
     color: #ff00ff;
-text-align: center;
+    text-align: center;
 }
 
 .naslov{
@@ -12,8 +12,9 @@ text-align: center;
 }
 
 #sadrzaj p{
-line-height: 0,9rem;
-color: blue;
+    line-height: 0.9rem;
+    color: blue;
+
 }
 
 ul{
@@ -21,16 +22,18 @@ ul{
 }
 
 ul li::before{
-    content: '👉';
+    content: '👋';
 }
 
 ol{
-   list-style-type: upper-roman;
+    list-style-type: upper-roman;
 }
 
+
 mark {
-  background-color: #ff99cc; /* nježno ružičasta pozadina */
-  color: #333;              /* tamnija boja teksta */
-  padding: 4px 7px;         /* malo prostora oko teksta */
-  border-radius: 6px;       /* zaobljeni rubovi */
+  background-color: #d1ed32; /* Pastelno narančasta/breskva */
+  color: #2a0f0a; /* Tamno smeđa za bolji kontrast */
+  border-radius: 15px; /* Zaobljeni rubovi */
+  padding: 6px 6px; /* Malo prostora oko teksta */
+  font-weight: 700;
 }

@@ -14,7 +14,7 @@ body{
 .forma{
     border: 1px solid #eaeceb;
     border-radius: 10px;
-    padding: 15px;
+    padding: 1em;
     margin-bottom: 30px;
 }
 
@@ -30,7 +30,7 @@ form{
 }
 
 h1{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     border-bottom: 2px solid blue;
     padding-bottom: 10px;
     max-width: 180px;
@@ -64,22 +64,22 @@ table{
 }
 
 th{
-    background-color: #3579f7;
-    color: white;padding: 5px;
-    font-size: 0.8rem;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
     text-align: left;
 }
 
-tbody > tr > td:first-child,
+tbody > tr> td:first-child,
 thead > tr > th:first-child,
 thead > tr > th:last-child{
     text-align: center;
 }
 
 tbody > tr > td:last-child{
-    color: #ca5c55;
+    color: red;
     text-align: center;
-    font-weight: bold;
 }
 
 td{

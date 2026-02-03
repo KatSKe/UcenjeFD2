@@ -2,9 +2,8 @@
     --pozadina-boja: #eee;
     --panel-boja: white;
 }
-    
 
-body {
+body{
     background-color: var(--pozadina-boja);
 }
 
@@ -18,8 +17,7 @@ div{
     text-align: center;
 }
 
-h2 {
+h2{
     color: #9c8d8d;
     font-size: 1.1rem;
 }
-

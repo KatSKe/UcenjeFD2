@@ -1,22 +1,26 @@
-body{
-    background-color: antiquewhite;
+/* Postavljanje Montserrat fonta za cijelu stranicu */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Dodajemo tamnu pozadinsku boju za cijelo tijelo za bolji kontrast */
+    background-color: #212529; 
 }
 
-@font-face{
-    font-family: 'Ljubav';
-    src: url('../fonts/LavishlyYours-Regular.ttf') format('truetype');
+/* Stil za kartice unutar mreže (grid) - dodan bijeli obrub */
+.card {
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out;
+    /* Glavna promjena: dodavanje bijelog obruba od 8px */
+    border: 8px solid white !important; 
+    /* Dodajemo sjenu da izgleda kao na slici */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-@font-face{
-    font-family: 'Galada';
-    src: url(../fonts/Galada-Regular.ttf) format(truetype)
+.card:hover {
+    transform: translateY(-5px); 
 }
 
-@font-face{
-    font-family: 'Panchang';
-    src: url(../fonts/Panchang-Regular.ttf) format(truetype);
-}
-
-h1{
-    font-family: 'Ljubav', 'Times New Roman', serif;
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
 }

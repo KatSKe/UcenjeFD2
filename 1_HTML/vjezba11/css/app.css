@@ -2,6 +2,7 @@
     background-color: aliceblue;
 }
 
-body{
-    padding-top: 20px;
+
+tr.red > th, tr.red > td:nth-child(3), tr.red > td:nth-child(2),tr.red > td:last-child{
+    background-color: var(--bs-info) !important;
 }

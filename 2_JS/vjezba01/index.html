@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Hello world</title>
-
     <style>
         .nojs{
             background-color: red;
@@ -16,10 +15,9 @@
             width: 100%;
         }
     </style>
-
 </head>
 <body>
-    
+
     <p id="ispis">
 
     </p>
@@ -39,40 +37,37 @@
         Edunova
     </div>
 
-    <!-- Kad pišem mala slova,on ih prikazuje kao velika -->
     <input type="text" name="" id="" style="font-size: 3rem;"
     onkeyup="this.value=this.value.toUpperCase()"
     >
-
-
+    
     <noscript>
         <div class="nojs">
-            Vaš preglednik ne podržava JavaScript
+            Vaš preglednik ne podržava JavaScript!
         </div>
     </noscript>
 
-    <!-- Ako želimo izvoditi JS direktno iz HTML_a -->
+    <!-- Ako želimo izvoditi JS direktno iz HTML-a -->
     <script>
         // ovo je jedna linija komentara
 
         /*
-        komentar kroz 
+        Komentar kroz
         više linija
         */
+       //alert('Hello world 1'); // ; ne treba ali kako je predavač matori developer stavljati ću je
 
-       // alert('Hello world 1'); // ; ne treba ali kaako je predavač matori developer stavljati ću je
+       document.write('Hello world 2'); // ovo nećemo raditi
 
-        document.write('Hello world 2'); // ovo nećemo raditi
+       console.log('Hello world 3');
 
-        console.log('Hello world 3');
+       //console.logiraj('Hello world 4'); //Uncaught TypeError: console.logiraj is not a function
 
-        // console.logiraj('Hello world 4'); // index.html:44 Uncaught TypeError: console.logiraj is not a function
-        // console.logiraj'Hello world 4'); // Uncaught SyntaxError: Unexpected string (at index.html:45:24) - nedostaje zagada
+       //console.log'Hello world 5'); // nedostaje (  Uncaught SyntaxError: Unexpected string (at index.html:43:19)
 
     </script>
 
     <!-- Učitanje vanjske JS datoteke -->
-        <script src="skripta.js"></script>
-
+     <script src="skripta.js"></script>
 </body>
 </html>
