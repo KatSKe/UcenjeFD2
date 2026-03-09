@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* 2025 gradient trend */
+    background: linear-gradient(135deg,#c2f0ff,#f8e1ff,#e4ffd9);
+}
+
+/* glassmorphism kartica */
+
+#app{
+    text-align:center;
+    padding:50px;
+    width:350px;
+
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(15px);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.15);
+
+    border:1px solid rgba(255,255,255,0.4);
+}
+
+#app p{
+    font-size:18px;
+    color:#555;
+    margin-bottom:10px;
+}
+
+/* veliki broj */
+
+#app h1{
+    font-size:70px;
+    color:#333;
+    margin-bottom:30px;
+}
+
+/* gumbi */
+
+.buttons{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+}
+
+button{
+    border:none;
+    padding:12px 22px;
+
+    font-size:16px;
+    font-weight:600;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#7fd8ff,#a6ffb8);
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.15);
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.2);
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+/* upozorenje */
+
+.warning{
+    margin-top:25px;
+    padding:10px;
+
+    border-radius:10px;
+
+    background:#ffe6e6;
+    color:#c62828;
+
+    font-weight:600;
+
+    animation:fadeIn .3s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edunova | Frontend Polaznici</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pregled polaznika</h1>
+        <h2>Frontend developer</h2>
+    </header>
+    <main>
+        <section id="karticni-pregled">
+            <h3>Kartični pregled</h3>
+            <div id="kartice-kontejner" class="grid-container"></div>
+        </section>
+    </main>
+
+    <!-- Modal/Lightbox -->
+    <div id="modal-overlay" class="modal-overlay">
+        <span class="modal-close">&times;</span>
+        <a class="modal-prev">&#10094;</a>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Polaznik">
+            <p id="modal-caption"></p>
+        </div>
+        <a class="modal-next">&#10095;</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

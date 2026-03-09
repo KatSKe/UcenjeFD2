@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edunova - Frontend Developer Polaznici</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Edunova Frontend Developer</h1>
+            <p class="subtitle">Naši polaznici</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Kartični pregled -->
+        <section class="cards-section">
+            <h2>Pregled polaznika</h2>
+            <div id="cards-grid" class="cards-grid">
+                <!-- Kartice će biti dinamički generirane putem JavaScript-a -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal galerija -->
+    <div id="gallery-modal" class="gallery-modal">
+        <span class="close-modal">&times;</span>
+        <button class="nav-btn prev-btn" id="prev-btn">&#10094;</button>
+        <button class="nav-btn next-btn" id="next-btn">&#10095;</button>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modal-name"></h3>
+                <p id="modal-role">Frontend Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Edunova - Frontend Developer Program</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
