@@ -1,46 +1,46 @@
-import { Container, Nav, Navbar } from "react-bootstrap" 
-// maknut NavDropdown jer se ne koristi
-
+import { Container, Nav, Navbar } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 import { IME_APLIKACIJE, RouteNames } from "../constants"
 
 export default function Izbornik() {
-
     const navigate = useNavigate()
 
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" bg="light" variant="light" className="mb-3">
             <Container>
 
-                {/* PROMJENA: maknut href i dodan navigate da ne refresh-a stranicu */}
-                <Navbar.Brand onClick={() => navigate(RouteNames.HOME)}>
+                {/* Brand: klikom ide na HOME */}
+                <Navbar.Brand 
+                    style={{ cursor: "pointer" }} 
+                    onClick={() => navigate(RouteNames.HOME)}
+                >
                     {IME_APLIKACIJE}
                 </Navbar.Brand>
 
+                {/* Toggle za mobilne uređaje */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
 
-                        {/* navigacija na HOME */}
-                        <Nav.Link
-                            onClick={() => navigate(RouteNames.HOME)}
-                        >
+                        {/* HOME */}
+                        <Nav.Link onClick={() => navigate(RouteNames.HOME)}>
                             Home
                         </Nav.Link>
 
-                        {/* navigacija na ACCOMODATION */}
-                        <Nav.Link
-                            onClick={() => navigate(RouteNames.ACCOMODATION)}
-                        >
+                        {/* ACCOMMODATION */}
+                        <Nav.Link onClick={() => navigate(RouteNames.ACCOMMODATION)}>
                             Find Accommodation
                         </Nav.Link>
 
-                        {/* navigacija na RESERVATIONS */}
-                        <Nav.Link
-                            onClick={() => navigate(RouteNames.RESERVATIONS)}
-                        >
+                        {/* RESERVATIONS */}
+                        <Nav.Link onClick={() => navigate(RouteNames.RESERVATIONS)}>
                             Reservations
+                        </Nav.Link>
+
+                        {/* MY PROFILE */}
+                        <Nav.Link onClick={() => navigate(RouteNames.MYPROFILE)}>
+                            My Profile
                         </Nav.Link>
 
                     </Nav>

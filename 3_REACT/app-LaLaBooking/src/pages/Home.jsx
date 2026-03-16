@@ -4,9 +4,7 @@ export default function Home() {
     return (
         <>
             <h1>Dobrodošli u {IME_APLIKACIJE}</h1>
-            <div>
-                Putovanje počinje jednim klikom!
-            </div>
+            <div>Putovanje počinje jednim klikom!</div>
         </>
     )
 }
