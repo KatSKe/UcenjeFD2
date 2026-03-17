@@ -43,6 +43,11 @@ export default function Izbornik() {
                             My Profile
                         </Nav.Link>
 
+                        {/* OFFERS */}
+                        <Nav.Link onClick={() => navigate(RouteNames.OFFERS)}>
+                            Offers
+                        </Nav.Link>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
