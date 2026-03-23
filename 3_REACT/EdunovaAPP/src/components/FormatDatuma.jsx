@@ -15,5 +15,5 @@ export default function FormatDatuma({datum,prikazZadano='-'}){
         year: 'numeric'
     }).format(d) + (datum.includes('T') ? '' : '.')
 
-    
+
 }

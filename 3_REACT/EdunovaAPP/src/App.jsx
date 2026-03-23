@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import { RouteNames } from './constants'
 import SmjerPregled from './pages/smjerovi/SmjerPregled'
 import Home from './pages/Home'
+import SmjerNovi from './pages/smjerovi/SmjerNovi'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path={RouteNames.HOME} element={<Home />} />
         <Route path={RouteNames.SMJEROVI} element={<SmjerPregled />}  />
+        <Route path={RouteNames.SMJEROVI_NOVI} element={<SmjerNovi />} />
       </Routes>
       <hr />
       &copy; Edunova
