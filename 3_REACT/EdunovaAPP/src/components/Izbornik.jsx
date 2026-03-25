@@ -16,6 +16,7 @@ export default function Izbornik() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
+                        
                         <Nav.Link
                         onClick={()=>navigate(RouteNames.HOME)}
                         >Početna</Nav.Link>

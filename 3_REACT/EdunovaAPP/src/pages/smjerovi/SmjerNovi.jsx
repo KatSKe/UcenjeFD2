@@ -1,12 +1,19 @@
 import { Button, Col, Form, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { RouteNames } from "../../constants";
+import SmjerService from "../../services/smjerovi/SmjerService";
 
 export default function SmjerNovi(){
 
+    const navigate = useNavigate()
+
     async function dodaj(smjer){
-        console.table(smjer)
+        //console.table(smjer)
+        await SmjerService.dodaj(smjer).then(()=>{
+            navigate(RouteNames.SMJEROVI)
+        })
     }
+
 
     function odradiSubmit(e){ // e je event
         e.preventDefault(); // nemoj raditi submit
@@ -29,7 +36,7 @@ export default function SmjerNovi(){
                     <Form.Control type="text" name="naziv" required />
                 </Form.Group>
 
-                <Form.Group controlID="trajanje">
+                <Form.Group controlId="trajanje">
                     <Form.Label>Trajanje</Form.Label>
                     <Form.Control type="number" name="trajanje" step={1} />
                 </Form.Group>
